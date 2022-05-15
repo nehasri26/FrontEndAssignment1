@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+    <title>Pharma</title>
+    <link rel="stylesheet" href="PharmaWebsite.css">
+</head>
+<body>
+    <header><h1>Pharmacy</h1></header>
+    <nav  id="navBar">
+        <a href="#home" class="active">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Our Medicines</button>
+          <div class="dropdown-content">
+            <a href="#">Fever</a>
+            <a href="#">Muscle Pain</a>
+            <a href="#">Cough & Cold</a>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Health Care</button>
+            <div class="dropdown-content">
+              <a href="#">Baby Care</a>
+              <a href="#">Skin Care</a>
+              <a href="#">Home Care</a>
+              <a href="#">Personal Care</a>
+              <a href="#">Pet Care</a>
+            </div>
+          </div>
+        <a href="#labTest" onclick="openForm()">Lab Test</a>
+    </nav>
+    <div id="content">
+        <div id="animationDiv"></div>
+        <div id="productsDiv">
+            <section><h3>Covid care</h3><br>
+                <div class="container">
+                    <a >
+                        <p class="boldFont">Covid Test Kit</p>
+                        <img src="images/Products/c1.jpg" alt="Covid Test Kit" class="image">
+                        <p class="blueFont">Rs 40</p>
+                        <p class="blueFont">Offer Rs 30/-</p>
+                        <input type="button" class="addToCardBtn" value="Add to cart"></input>
+                    </a>
+                </div>
+                <div class="container">
+                    <a >
+                        <p class="boldFont">Covid Essentials</p>
+                        <img src="images/Products/c2.jpg" alt="Covid Essentials" class="image">
+                        <p class="blueFont">Rs 240</p>
+                        <p class="blueFont">Offer Rs 170/-</p>
+                        <input type="button" class="addToCardBtn"  value="Add to cart"></input>
+                    </a>
+                </div>
+                <div class="container">
+                    <a >
+                        <p class="boldFont">Sanitizer Bottle</p>
+                        <img src="images/Products/c3.jpg" alt="Sanitizer Bottle" class="image">
+                        <p class="blueFont">Rs 99</p>
+                        <p class="blueFont">Offer Rs 87/-</p>
+                        <input type="button" class="addToCardBtn"  value="Add to cart"></input>
+                    </a>
+                </div>
+                <div class="container">
+                    <a >
+                        <p class="boldFont">Mask</p>
+                        <img src="images/Products/c4.jpg" alt="Mask" class="image">
+                        <p class="blueFont">Rs 45</p>
+                        <p class="blueFont">Offer Rs 30/-</p>
+                        <input type="button" class="addToCardBtn" value="Add to cart"></input>
+                    </a>
+                </div>
+            </section>
+            <section><h3>Diabetes care</h3>
+                <div class="container">
+                    <a>
+                        <p class="boldFont">CSIR</p>
+                        <img src="images/Products/d1.jpg" alt="CSIR" class="image">
+                        <p class="blueFont">Rs 45</p>
+                        <p class="blueFont">Offer Rs 30/-</p>
+                        <input type="button" class="addToCardBtn" value="Add to cart"></input>
+                    </a>
+                </div>
+                <div class="container">
+                    <a>
+                        <p class="boldFont">Chyawanaprakash</p>
+                        <img src="images/Products/d2.jpg" alt="Chyawanaprakash" class="image">
+                        <p class="blueFont">Rs 45</p>
+                        <p class="blueFont">Offer Rs 30/-</p>
+                        <input type="button" class="addToCardBtn" value="Add to cart"></input>
+                    </a>
+                </div>
+                <div class="container">
+                    <a >
+                        <p class="boldFont">Toothpaste</p>
+                        <img src="images/Products/d3.jpg" alt="Toothpaste" class="image">
+                        <p class="blueFont">Rs 45</p>
+                        <p class="blueFont">Offer Rs 30/-</p>
+                        <input type="button" class="addToCardBtn" value="Add to cart"></input>
+                    </a>
+                </div>
+                <div class="container">
+                    <a >
+                        <p class="boldFont">Cookies</p>
+                        <img src="images/Products/d4.png" alt="Cookies" class="image">
+                        <p class="blueFont">Rs 45</p>
+                        <p class="blueFont">Offer Rs 30/-</p>
+                        <input type="button" class="addToCardBtn" value="Add to cart"></input>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="form-popup" id="labForm">
+
+        <div class="popupDiv">
+            <div class="formDiv">
+                <form action="" class="form-container">
+
+                <h3>1. Your Contact details</h3>      
+                <input type="text" placeholder="Full Name" name="fullName" required>
+                <input type="text" placeholder="Patient Id if exist" name="patientId">
+                <input type="text" placeholder="Contact number" name="number" required>
+                <input type="email" placeholder="Email" name="email" required>
+
+                <h3>2. Address</h3>      
+                <input type="text" placeholder="House Number" name="houseNum" required>
+                <input type="text" placeholder="Street" name="street">
+                <input type="text" placeholder="Area" name="area" required>
+                <label>District</label>
+                <select name="district" id="district">
+                    <option value="Choose">Choose</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Dharwad">Dharwad</option>
+                </select>
+
+                <h3>3. Choose the Test Type</h3>      
+                <label>CBC</label><input type="checkbox" placeholder="CBC" name="CBC"><br>
+                <label>Complete Urine</label><input type="checkbox" placeholder="Complete Urine" name="urine"><br>
+                <label>Lipid Profile</label><input type="checkbox" placeholder="Lipid Profile" name="lipid"><br>
+                <label>Thyroid Stimulating Hormone(TSH)</label><input type="checkbox" placeholder="Thyroid Stimulating Hormone(TSH)" name="tsh"><br>
+                <label>Glucose Test</label><input type="checkbox" placeholder="Glucose Test" name="GT">
+                
+                <br><br><label>Do you need Hard Copy ?</label><br>
+                <label>Yes</label><input type="checkbox" name="hardCopyRequired" value="Yes"><br>
+                <label>No</label><input type="checkbox" name="hardCopyNotRequired" value="No">
+                <br><br>
+
+            
+                <button type="submit" class="btn" onclick="closeForm()">Submit</button>
+                <button type="reset" class="btn cancel">Reset</button>
+                </form>
+            </div>
+            <div class="imgDiv">
+                <img src="images/Lab-Test/lab-test.jpg" alt="Lab test">
+            </div>
+        </div>
+      </div>
+    
+    <footer><h4>@copyright. Only for demonstration 
+        purposes</h4></footer>
+
+        
+</body>
+<script src="PharmaWebsite.js"></script>
+</html>
