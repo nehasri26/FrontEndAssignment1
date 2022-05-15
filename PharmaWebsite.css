@@ -113,7 +113,7 @@ nav {
     width: 100%;
     height: 400px;
     position: relative;
-    background-image: url("images/Animation/ani1.jpg");
+    background-image: url("ani1.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     animation-name: imageAnimation;
@@ -124,11 +124,11 @@ nav {
 }
 
 @keyframes imageAnimation {
-    10% {background-image: url("images/Animation/ani1.jpg");}
-    30% {background-image: url("images/Animation/ani2.png");}
-    50% {background-image: url("images/Animation/ani3.jpg");}
-    80% {background-image: url("images/Animation/ani4.jpg");}
-    100% {background-image: url("images/Animation/ani5.jpg");}
+    10% {background-image: url("ani1.jpg");}
+    30% {background-image: url("ani2.png");}
+    50% {background-image: url("ani3.jpg");}
+    80% {background-image: url("ani4.jpg");}
+    100% {background-image: url("ani5.jpg");}
   }
   
   #productsDiv {
